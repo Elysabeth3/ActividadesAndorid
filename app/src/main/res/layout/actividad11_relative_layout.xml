@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/padre">
+
+    <ImageView
+        android:id="@+id/hijo1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/hijo2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Usuario"
+        android:layout_below="@id/hijo1"/>
+
+    <EditText
+        android:id="@+id/hijo3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Clave"
+        android:layout_below="@id/hijo2"/>
+
+    <TextView
+        android:id="@+id/hijo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hijo3"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:text="¿Contraseña olvidada?" />
+
+    <Button
+        android:id="@+id/hijo5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_marginLeft="15sp"
+        android:layout_below="@id/hijo3"
+        android:layout_toEndOf="@id/hijo4"/>
+
+
+</RelativeLayout>
